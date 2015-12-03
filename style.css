@@ -1,0 +1,42 @@
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.option {
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+}
+
+#grid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box {
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  float: left
+}
+
+.box.red {
+  background-color: #f90000;
+}
+
+.box.green {
+  background-color: #00f900;
+}
+
+.box.blue {
+  background-color: #0000f9;
+}

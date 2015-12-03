@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <h1>Etch-A-Sketch Thingy</h1>
+      <div class="option">
+        Grid Size
+        <input type="text" id="gridsize" size="1" maxlength="3" value="32"/>
+      </div>
+      <div class="option">
+        Color
+        <select id="colorchoice" name="Select Color">
+          <option value="red" selected>Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      <div class="option">
+        <button id="generategrid">Generate Grid</button>
+      </div>
+      <div class="option">
+        <button id="cleargrid">Clear Grid</button>
+      </div>
+
+      <div id="grid">
+      </div>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="sketchpad.js"></script>
+    </div>
+  </body>
+
+</html>
